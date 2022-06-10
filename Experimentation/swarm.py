@@ -15,7 +15,7 @@ from tqdm import tqdm
 import evaluation
 from PIL import Image
 
-with st.container():
+with st.beta_container():
     image = Image.open('sunset.jpg')
 
     st.image(image, caption='Bumblebee')
