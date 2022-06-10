@@ -14,7 +14,12 @@ from transformers import pipeline
 from tqdm import tqdm
 import evaluation
 from PIL import Image
-image = Image.open('sunflower.jpg')
+
+with st.beta_container():
+    image = Image.open('sunset.jpg')
+
+    st.image(image, caption='Bumblebee')
+
 import streamlit.components.v1 as components
 
 # load corpus and split them to hateful vs non-hateful
