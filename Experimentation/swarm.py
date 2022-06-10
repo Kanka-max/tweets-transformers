@@ -35,12 +35,10 @@ def load_classifier(classifier):
     return classifier
 
 #TITLE
-
-st.image(image, caption='sunflower.jpg')
 st.title("Language Transformers Data App :sunglasses:")
 st.markdown("**Huggingface** models inferred on multilingual corpus for **zero-shot** text classification")
 
-with st.container():
+with st.beta_container():
     option = st.selectbox(
      'Which dataset would you like to try?',
      ('English Corpus (Hateful)', 'English Corpus (Non-Hateful)', 
@@ -57,7 +55,7 @@ with st.container():
 
 ###### SIDEBAR ####
 # JUST DO IT
-with st.container():
+with st.beta_container():
 
     st.sidebar.subheader("Train & Evaluate")
 with st.container():
@@ -200,7 +198,7 @@ if sidebar_option == "English Corpus" and model == "RoBERTa-Large":
 
         return st.plotly_chart(fig, sharing="streamlit", use_container_width=True)
 
-    with st.container():
+    with st.beta_container():
         plot_evaluation(hamming_r, precision_r, accuracy_r, f1_r, matthews_r)
         st.balloons()
 if sidebar_option == "English Corpus" and model == "Facebook-BART-Large":
@@ -289,7 +287,7 @@ if sidebar_option == "English Corpus" and model == "Facebook-BART-Large":
 
             return st.plotly_chart(fig, sharing="streamlit", use_container_width=True)
 
-        with st.container():
+        with st.beta_container():
             plot_evaluation(hamming_r, precision_r, accuracy_r, f1_r, matthews_r)
             st.snow()
 
