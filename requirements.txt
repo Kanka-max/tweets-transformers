@@ -82,7 +82,7 @@ toolz==0.11.1
 tokenizers >=0.6,<0.83
 tornado==6.1
 traitlets==5.0.5
-transformers==4.19.3
+transformers==3.0.0
 tqdm==4.64.0
 tzlocal==2.1
 urllib3==1.26.5
