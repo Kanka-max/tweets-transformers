@@ -46,7 +46,7 @@ with st.beta_container():
       'Swahili Corpus (Hateful/Non-H))', "Multilngual Multilabel",
       'Custom'))
 
-with st.container():
+with st.beta_container():
     model = st.selectbox(
      'Which model would you like to train?',
      ('RoBERTa-Large', 
@@ -58,7 +58,7 @@ with st.container():
 with st.beta_container():
 
     st.sidebar.subheader("Train & Evaluate")
-with st.container():
+with st.beta_container():
     sidebar_option = st.sidebar.selectbox(
      'Fit a model on a dataset?',
      ('English Corpus', 'Kiswahili', 'Cross-lingual','Sheng'))
