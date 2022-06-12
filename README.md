@@ -5,7 +5,7 @@ This repository consists of notebooks that implement **zero-shot** classificatio
 
 The models documentation can be found here:
 
-(RoBERTa-Large-XNLI)[https://huggingface.co/joeddav/xlm-roberta-large-xnli]
-(Facebook/BART-Large)[https://huggingface.co/facebook/bart-large]
+[RoBERTa-Large-XNLI](https://huggingface.co/joeddav/xlm-roberta-large-xnli]
+[Facebook/BART-Large](https://huggingface.co/facebook/bart-large)
 
-There's also python scripts to deploy it as a data app on (Stream Cloud)[https://streamlit.io/cloud]
+There's also python scripts to deploy it as a data app on [Stream Cloud](https://streamlit.io/cloud)
