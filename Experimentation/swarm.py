@@ -23,7 +23,8 @@ with st.beta_container():
 import streamlit.components.v1 as components
 
 # load corpus and split them to hateful vs non-hateful
-eng_tweets = "https://raw.githubusercontent.com/Kanka-max/tweets-transformers/main/Experimentation/en_200_examples.xlsx%20-%20en_200_examples.csv"
+#eng_tweets = "https://raw.githubusercontent.com/Kanka-max/tweets-transformers/main/Experimentation/en_200_examples.xlsx%20-%20en_200_examples.csv"
+eng_tweets = "en_200_examples.xlsx - en_200_examples.csv"
 swa_tweets = "swa_tweets.csv"
 
 
